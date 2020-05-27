@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc689f53-8c0b-4dc0-a589-495ea21f3685" name="Default Changelist" comment="" />
+    <list default="true" id="bc689f53-8c0b-4dc0-a589-495ea21f3685" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/Day_0526/ScanQuiz.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,11 +14,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1cR0dIvNYCWTUhl2ooVTW7u7RTL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,9 +33,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/WorkSpaceOfJava/BaekJoon" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,13 +52,13 @@
       <recent name="C:\fninoedu\java\src\Day_0526" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ScanQuiz_16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_0526.ScanQuiz_16" />
+  <component name="RunManager" selected="Application.QuizWhile_21">
+    <configuration name="EqualsTest_09" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0527.EqualsTest_09" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_0526.*" />
+          <option name="PATTERN" value="Day_0527.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -54,12 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScannerCalAge_15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_0526.ScannerCalAge_15" />
+    <configuration name="MaxNum_11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0527.MaxNum_11" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_0526.*" />
+          <option name="PATTERN" value="Day_0527.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScannerScore_14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_0526.ScannerScore_14" />
+    <configuration name="QuizIfOper_15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0527.QuizIfOper_15" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_0526.*" />
+          <option name="PATTERN" value="Day_0527.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +92,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScannerTest_13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_0526.ScannerTest_13" />
+    <configuration name="QuizWhile_21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0527.QuizWhile_21" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_0526.*" />
+          <option name="PATTERN" value="Day_0527.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WhileTrueCnt_19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0527.WhileTrueCnt_19" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day_0527.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,10 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ScanQuiz_16" />
-        <item itemvalue="Application.ScannerCalAge_15" />
-        <item itemvalue="Application.ScannerScore_14" />
-        <item itemvalue="Application.ScannerTest_13" />
+        <item itemvalue="Application.QuizWhile_21" />
+        <item itemvalue="Application.WhileTrueCnt_19" />
+        <item itemvalue="Application.QuizIfOper_15" />
+        <item itemvalue="Application.MaxNum_11" />
+        <item itemvalue="Application.EqualsTest_09" />
       </list>
     </recent_temporary>
   </component>
@@ -127,6 +153,9 @@
       <workItem from="1590476186465" duration="2790000" />
       <workItem from="1590479009041" duration="2771000" />
       <workItem from="1590482360201" duration="426000" />
+      <workItem from="1590538411384" duration="7771000" />
+      <workItem from="1590552141453" duration="13241000" />
+      <workItem from="1590572565459" duration="45000" />
     </task>
     <servers />
   </component>
@@ -138,25 +167,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1590477022168" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1590478979477">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1590572590856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590478979477" />
-    <state width="603" height="255" key="GridCell.Tab.0.bottom" timestamp="1590482787349">
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590572590856" />
+    <state width="429" height="256" key="GridCell.Tab.0.bottom" timestamp="1590569456928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="603" height="255" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590482787349" />
-    <state width="603" height="255" key="GridCell.Tab.0.center" timestamp="1590482787348">
+    <state width="429" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590569456928" />
+    <state width="429" height="256" key="GridCell.Tab.0.center" timestamp="1590569456927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="603" height="255" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590482787348" />
-    <state width="603" height="255" key="GridCell.Tab.0.left" timestamp="1590482787348">
+    <state width="429" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590569456927" />
+    <state width="429" height="256" key="GridCell.Tab.0.left" timestamp="1590569456927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="603" height="255" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590482787348" />
-    <state width="603" height="255" key="GridCell.Tab.0.right" timestamp="1590482787349">
+    <state width="429" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590569456927" />
+    <state width="429" height="256" key="GridCell.Tab.0.right" timestamp="1590569456927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="603" height="255" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590482787349" />
+    <state width="429" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590569456927" />
+    <state x="104" y="244" key="run.anything.popup" timestamp="1590557372633">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="104" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590557372633" />
   </component>
 </project>
