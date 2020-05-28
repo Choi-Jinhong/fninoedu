@@ -7,14 +7,20 @@ public class QuizWhile_21 {
         Scanner sc = new Scanner(System.in);
 
         int num = 1;
-        int score = 0;
+        int score;
         int totscore = 0;
 
-        while(num <= 5) {
-            System.out.println(num + "번째 점수를 입력하시오");
+        while(true) {
+            System.out.println(num + "번째 점수를 입력하시오. (1 ~ 100)");
             score = sc.nextInt();
-            totscore += score;
-            num++;
+            if(score >= 1 && score <= 100) {
+                totscore += score;
+                num++;
+            }
+            else
+                continue;
+            if(num > 5)
+                break;
         }
         System.out.println("====================");
         System.out.println("총합계: " + totscore);
