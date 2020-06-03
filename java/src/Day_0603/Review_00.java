@@ -18,14 +18,14 @@ class Info{
     }
 
     public void student(){
-        System.out.println(num + "\t\t" + name + "\t" + age + "세\t" + scoreJava + "점\t" + scoreJsp + "점\t" + sum + "점\t" + avg + "점");
+        System.out.println(num + "\t" + name + "\t" + age + "세\t" + scoreJava + "점\t" + scoreJsp + "점\t" + sum + "점\t" + avg + "점");
         num++;
     }
 }
 
 public class Review_00 {
     public static void main(String[] args) {
-        System.out.println("번호\t이름\t나이\tjava\tjsp\t\t합계\t평균");
+        System.out.println("번호\t이름\t나이\tjava\tjsp\t합계\t평균");
         System.out.println("======================================================");
         Info[] info = {new Info("이지선", 22, 88, 99),
                 new Info("김희애", 33, 100, 65),
