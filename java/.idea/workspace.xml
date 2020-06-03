@@ -12,13 +12,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java/Day_0527/QuizWhile_21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/Day_0527/QuizWhile_21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/Day_0528/QuizForWhile_11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/Day_0528/QuizForWhile_11.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Day_0527/QuizWhile_21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day_0527/QuizWhile_21.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,19 +68,23 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Day_0602" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\fninoedu\java\src\Day_0526" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ScoreTest_17">
-    <configuration name="InfoDataTest_15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_0601.InfoDataTest_15" />
+  <component name="RunManager" selected="Application.Review_00">
+    <configuration name="FruitTest_07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0602.FruitTest_07" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_0601.*" />
+          <option name="PATTERN" value="Day_0602.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest_14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_0601.PersonTest_14" />
+    <configuration name="InterBoardEx_10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0602.InterBoardEx_10" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_0601.*" />
+          <option name="PATTERN" value="Day_0602.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnTest_13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_0601.ReturnTest_13" />
+    <configuration name="PointTest_06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0602.PointTest_06" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_0601.*" />
+          <option name="PATTERN" value="Day_0602.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SangpumTest_16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_0601.SangpumTest_16" />
+    <configuration name="QuizArrayConstTest_11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0602.QuizArrayConstTest_11" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_0601.*" />
+          <option name="PATTERN" value="Day_0602.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScoreTest_17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_0601.ScoreTest_17" />
+    <configuration name="Review_00" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_0603.Review_00" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_0601.*" />
+          <option name="PATTERN" value="Day_0603.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ScoreTest_17" />
-        <item itemvalue="Application.SangpumTest_16" />
-        <item itemvalue="Application.InfoDataTest_15" />
-        <item itemvalue="Application.PersonTest_14" />
-        <item itemvalue="Application.ReturnTest_13" />
+        <item itemvalue="Application.Review_00" />
+        <item itemvalue="Application.QuizArrayConstTest_11" />
+        <item itemvalue="Application.InterBoardEx_10" />
+        <item itemvalue="Application.FruitTest_07" />
+        <item itemvalue="Application.PointTest_06" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +185,10 @@
       <workItem from="1590623994443" duration="23608000" />
       <workItem from="1590711136698" duration="8445000" />
       <workItem from="1590970008557" duration="24610000" />
+      <workItem from="1591056385695" duration="10739000" />
+      <workItem from="1591074425704" duration="100000" />
+      <workItem from="1591074575359" duration="9167000" />
+      <workItem from="1591142846159" duration="1060000" />
     </task>
     <servers />
   </component>
@@ -179,41 +200,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1590970017912" />
-    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser" timestamp="1590996412540">
+    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser" timestamp="1591079892931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590996412540" />
+    <state x="765" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591079892931" />
     <state x="741" y="409" width="438" height="231" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590990435785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="741" y="409" width="438" height="231" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1590990435785" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1590998448603">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1591080525002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590998448603" />
-    <state width="443" height="466" key="GridCell.Tab.0.bottom" timestamp="1590998450039">
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591080525002" />
+    <state width="551" height="341" key="GridCell.Tab.0.bottom" timestamp="1591143853806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="443" height="466" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590998450039" />
-    <state width="443" height="466" key="GridCell.Tab.0.center" timestamp="1590998450039">
+    <state width="551" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591143853806" />
+    <state width="551" height="341" key="GridCell.Tab.0.center" timestamp="1591143853806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="443" height="466" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590998450039" />
-    <state width="443" height="466" key="GridCell.Tab.0.left" timestamp="1590998450039">
+    <state width="551" height="341" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591143853806" />
+    <state width="551" height="341" key="GridCell.Tab.0.left" timestamp="1591143853806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="443" height="466" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590998450039" />
-    <state width="443" height="466" key="GridCell.Tab.0.right" timestamp="1590998450039">
+    <state width="551" height="341" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591143853806" />
+    <state width="551" height="341" key="GridCell.Tab.0.right" timestamp="1591143853806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="443" height="466" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590998450039" />
+    <state width="551" height="341" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591143853806" />
+    <state x="226" y="0" width="1637" height="877" key="SettingsEditor" timestamp="1591077324512">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="226" y="0" width="1637" height="877" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591077324512" />
     <state x="104" y="244" key="run.anything.popup" timestamp="1590557372633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="104" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590557372633" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590650322730">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1591075089912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590650322730" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591075089912" />
   </component>
 </project>
