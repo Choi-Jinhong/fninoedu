@@ -33,70 +33,68 @@ loop:for( ; ; ){
 ### 형식
 #### 접근지정자 메소드명()
 
-###특징
-#####1. 일반 메소드하고 차이점: 리턴형이 없다.
-#####2. 메소드 명은 반드시 클래스와 같아야 한다.(대소문자 동일)
-#####3. Overloading이 가능하다. -> 여러 개의 생성자를 만들 수 있다.
-#####4. 생성자가 없을 경우 기본 생성자로 생성이 가능하다.
-#####5. 생성자에서는 주로 멤버의 초기화를 담당한다.
-#####6. 같은 생성자끼리 호출은 "this()" -> this는 첫 줄?
-#####7. 생성자가 따로 지정될 경우 Default 생성자는 사라지게 되며, 필요한 경우에는 따로 생성해주어야 한다.
+### 특징
+##### 1. 일반 메소드하고 차이점: 리턴형이 없다.
+##### 2. 메소드 명은 반드시 클래스와 같아야 한다.(대소문자 동일)
+##### 3. Overloading이 가능하다. -> 여러 개의 생성자를 만들 수 있다.
+##### 4. 생성자가 없을 경우 기본 생성자로 생성이 가능하다.
+##### 5. 생성자에서는 주로 멤버의 초기화를 담당한다.
+##### 6. 같은 생성자끼리 호출은 "this()" -> this는 첫 줄?
+##### 7. 생성자가 따로 지정될 경우 Default 생성자는 사라지게 되며, 필요한 경우에는 따로 생성해주어야 한다.
 
-###예제
-#####CardTest_01.java: 인스턴스 변수와 클래스 변수에 대한 설명
-#####Counter_02.java: static 변수의 사용에 따른 결과값 변화
-#####TestA_03.java, ObTestA_03.java: 클래스 변수와 인스턴스 변수의 호출의 차이
-#####ConstTest_04.java: 생성자와 메소드의 사용
-#####ConstTest_05.java: 생성자와 메소드 사용 실습
-#####ConstOver_06.java: Overloading의 사용 
-#####ConstThis_07.java: this를 이용한 생성자 활용
+### 예제
+##### CardTest_01.java: 인스턴스 변수와 클래스 변수에 대한 설명
+##### Counter_02.java: static 변수의 사용에 따른 결과값 변화
+##### TestA_03.java, ObTestA_03.java: 클래스 변수와 인스턴스 변수의 호출의 차이
+##### ConstTest_04.java: 생성자와 메소드의 사용
+##### ConstTest_05.java: 생성자와 메소드 사용 실습
+##### ConstOver_06.java: Overloading의 사용 
+##### ConstThis_07.java: this를 이용한 생성자 활용
 
-##접근지정자
-###pritvate
-#####: 해당 클래스가 가진 멤버 메소드만 접근 가능 -> 변수를 캡슐화 한 것
-###protected
-#####: 패키지가 다를 경우 상속받은 클래스만 접근 가능
-###default(아무것도 안 쓴 경우)
-#####: 패키지가 다를 경우 접근 불가
-###public
-#####: 패키지 상관없이 어디서든 접근 가능
-###예제
-#####Student_08.java, StudentTest_08: private로 만들어진 인스턴스 변수를 변경하는 getter, setter
-#####MyDateTest_09: Alt+Insert를 이용해 getter, setter 자동 생성
+## 접근지정자
+### pritvate
+##### : 해당 클래스가 가진 멤버 메소드만 접근 가능 -> 변수를 캡슐화 한 것
+### protected
+##### : 패키지가 다를 경우 상속받은 클래스만 접근 가능
+### default(아무것도 안 쓴 경우)
+##### : 패키지가 다를 경우 접근 불가
+### public
+##### : 패키지 상관없이 어디서든 접근 가능
+### 예제
+##### Student_08.java, StudentTest_08: private로 만들어진 인스턴스 변수를 변경하는 getter, setter
+##### MyDateTest_09: Alt+Insert를 이용해 getter, setter 자동 생성
 
-##Method
-###예제
-#####MethodTest_10, MethodTest_11: Method 생성 연습
-#####MethodReturn_12: return을 통해 결과값 반환
-#####MehtodReturn_13: return을 사용하여 메소드를 벗어나는 방법
-#####PersonTest_14: 생성자 실습
-#####InfoData_15, InfoDataTest_15: 메소드 실습
-#####Sangpum_16, SangpumTest_16: 메소드 실습
-#####ScoreTest_17: 생성자, 메소드 실습
+## Method
+### 예제
+##### MethodTest_10, MethodTest_11: Method 생성 연습
+##### MethodReturn_12: return을 통해 결과값 반환
+##### MehtodReturn_13: return을 사용하여 메소드를 벗어나는 방법
+##### PersonTest_14: 생성자 실습
+##### InfoData_15, InfoDataTest_15: 메소드 실습
+##### Sangpum_16, SangpumTest_16: 메소드 실습
+##### ScoreTest_17: 생성자, 메소드 실습
 
-#2020_06_01 (DAY_6)
-#####FoodTest_00: 생성자 메소드 복습
-#####ArratyConst_01, ArrayConst_02: 배열을 이용하여 생성자 활용
-#####InstTest_03, Day_0602_1/InstConst_03: 외부 패키지의 메소드 활용
-#####
-
-##자바의 상속
-###[ is a 관계 ]
+# 2020_06_01 (DAY_6)
+##### FoodTest_00: 생성자 메소드 복습
+##### ArratyConst_01, ArrayConst_02: 배열을 이용하여 생성자 활용
+##### InstTest_03, Day_0602_1/InstConst_03: 외부 패키지의 메소드 활용
+## 자바의 상속
+### [ is a 관계 ]
 중복, 공통점을 추출해서 상위개념의 객체로 만들 수 있으며 상위개념의 객체를 상속받아 사용한다면 중복이 제거되고 재사용성도 향상 
 즉, is a 관계는 자바의 상속기법을 적용
 부모 클래스가 다른 패키지에 있을 경우 protected ,public 변수는 접근이 가능하다
 같은 패키지인 경우에는 private 만 빼고 모두 접근 가능
 
-###[ 상속의 조건 ]
-#####1. 객체간 is a 관계
-#####2. 같은패키지에선 부모클래스의 멤버(인스턴스변수,메소드)를 자식클래스가 선언없이사용가능하다(단,private 접근지정자 제외)-다른패키지에선 import해야함
-#####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - private: 같은 패키지여도 상속 못 받음
-#####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - default: 패키지가 다르면 상속받을 수 없다
-#####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - protected: 패키지가 달라도 상속받을수 있다.상속받은 클래스만 사용가능
+### [ 상속의 조건 ]
+##### 1. 객체간 is a 관계
+##### 2. 같은패키지에선 부모클래스의 멤버(인스턴스변수,메소드)를 자식클래스가 선언없이사용가능하다(단,private 접근지정자 제외)-다른패키지에선 import해야함
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - private: 같은 패키지여도 상속 못 받음
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - default: 패키지가 다르면 상속받을 수 없다
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - protected: 패키지가 달라도 상속받을수 있다.상속받은 클래스만 사용가능
 
-#####3. 자바는 단일 상속만 지원
-#####4. 상속은 extends키워드로 표현
-#####5. 가장상위는 java.lang.Object. 따라서 모든 클래스는 Object클래스를 상속
+##### 3. 자바는 단일 상속만 지원
+##### 4. 상속은 extends키워드로 표현
+##### 5. 가장상위는 java.lang.Object. 따라서 모든 클래스는 Object클래스를 상속
 
 클래스를 객체생성할때는 자동으로 부모->자식순이다
 그래야 자식이 부모의멤버를사용할수있기때문이다.
@@ -104,7 +102,7 @@ loop:for( ; ; ){
 따라서 반드시 부모클래스에는 디폴트 생성자가 없으면 에러가 발생한다
 
 
-####[오버라이딩]
+#### [오버라이딩]
 하위클래스에서 부모클래스의 메소드를 수정해서 사용하는 것
 1. 상속이 전제  
 2. 메소드이름이 동일  
@@ -113,24 +111,24 @@ loop:for( ; ; ){
 5. 예외클래스는 축소만 가능
 6. static,final,private지정자를 가진 메소드는오버라이딩 불가능
 
-####[추상클래스(abstract)]
-#####abstract 클래스는 new로 생성못함
-#####abstract 메소드는 abstract 클래스에서만 존재할 수 잇음
-#####abstract 클래스는 일반메소드와 추상메소드 둘 다 포함 가능 -> 추상메소드가 하나라도 있으면 추상 클래스
-#####overriding이 목적이다 !!
+#### [추상클래스(abstract)]
+##### abstract 클래스는 new로 생성못함
+##### abstract 메소드는 abstract 클래스에서만 존재할 수 잇음
+##### abstract 클래스는 일반메소드와 추상메소드 둘 다 포함 가능 -> 추상메소드가 하나라도 있으면 추상 클래스
+##### overriding이 목적이다 !!
 
-####[인터페이스(interface)]
-#####추상메소드만 포함되어 있는 클래스
-#####내용이 구성되있지 않아 implements를 통해 내용을 구성
+#### [인터페이스(interface)]
+##### 추상메소드만 포함되어 있는 클래스
+##### 내용이 구성되있지 않아 implements를 통해 내용을 구성
 
-####[extends와 implements구분]
-#####- 클래스가 클래스를 extends
-#####- 클래스가 인터페이스를 implements
-#####- 인터페이스가 인터페이스를 extends
+#### [extends와 implements구분]
+##### - 클래스가 클래스를 extends
+##### - 클래스가 인터페이스를 implements
+##### - 인터페이스가 인터페이스를 extends
 
-####[다형성]
-####(부모클래스명) (변수명) = new (자식클래스명)();
-#####다형성은 하나의 변수로 여러가지 일을 처리할 때 이용
-#####다형성은 하위클래스로 생성
+#### [다형성]
+#### (부모클래스명) (변수명) = new (자식클래스명)();
+##### 다형성은 하나의 변수로 여러가지 일을 처리할 때 이용
+##### 다형성은 하위클래스로 생성
 
 
