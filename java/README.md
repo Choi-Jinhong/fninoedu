@@ -190,3 +190,6 @@ loop:for( ; ; ){
   §Blocked – 스레드가 다른 특정한 이유로 Running 상태에서 Blocked 상태로 이동하게 된다.
   §Dead – 스레드가 종료되면 그 스레드는 다시 시작할 수 없게 된다.
 
+## 2020_06_08 (DAY_11)
+###[Connection 클래스]
+###[Statment 클래스]
