@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#box{
+    background-color: #ff9999; width: 800px; height: 600px; color:#ffffff;
+}
+
+#box h1{
+    text-align: center; padding-top: 40px;
+}
+#box p{
+    text-align: center;
+}
+
+box ul li{
+    padding-left: 100px;
+    list-style: none;
+}
