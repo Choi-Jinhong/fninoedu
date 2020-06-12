@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_audioVideo</title>
+</head>
+<body>
+    <h2>html5에 추가된 Audio&Video</h2>
+    <!--mp3 파일-->
+    <h3>Audio로 음악 듣기</h3>
+    <audio src="img/audiovideo/audio.wav" controls="controls"></audio> <!--controls는 컨트롤할 수 있는 객체를 생성--><br>
+    <!--동영상-->
+    <h3>Video로 영상 보기</h3>
+    <video src="img/audiovideo/video.m4v" controls="controls" width="300" height="200" onmouseover="this.play()" onmouseout="this.pause()"></video>
+    <!--onmouseover: 영상에 마우스를 올리면 재생 벗어나면 일시정지-->
+</body>
+</html>

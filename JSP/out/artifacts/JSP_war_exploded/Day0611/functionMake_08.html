@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_functionMake</title>
+    <script type="text/javascript">
+        function showName(name) {
+            document.write("안녕하세요." + name + "님<br>Java 수업 시작하겠습니다.<br>");
+        }
+        showName("유재석");
+        showName("박명수");
+        showName("정형돈");
+        window.onload = function () {
+
+            var list = '';
+            list +='<ul>';
+            list +='<li>Hello</li>';
+            list +='<li>JavaScript</li>';
+            list +='</ul>';
+
+            // document.write(list);
+            document.body.innerHTML=list;
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

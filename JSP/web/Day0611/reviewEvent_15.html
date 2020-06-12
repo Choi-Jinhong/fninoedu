@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15_reviewEvent</title>
+    <style type="text/css">
+        #checkcheck {
+            position: absolute;
+            left: 20px;
+            top: 100px;
+            background: #ffcccc;
+            padding: 10px 10px 10px 10px;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+    <script type="text/javascript">
+        /*alert1*/
+        function test1(a) {
+            alert(a+100);
+        }
+        function test2(b) {
+            alert("입력하신 데이터는" + b + "입니다.");
+        }
+        function test3(){
+            var ans= confirm("수강신청을 하셨습니까?");
+            if(ans == 1){
+                checkcheck.innerHTML = "예, 했습니다."
+            }
+            else
+                checkcheck.innerHTML = "아니오, 안했습니다."
+        }
+        function test4() {
+            var name = prompt("이름은?");
+            checkcheck.innerHTML="회원님의 이름은" + name + "입니다."
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="alert" onclick="test1(100)">
+    <input type="button" value="alert" onclick="test2('가나다라')">
+    <input type="button" value="confirm" onclick="test3()">
+    <input type="button" value="prompt" onclick="test4()">
+
+    <div id="checkcheck">
+
+    </div>
+</body>
+</html>

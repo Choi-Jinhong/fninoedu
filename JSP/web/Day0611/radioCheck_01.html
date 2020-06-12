@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_radioCheck</title>
+    <style type="text/css">
+        table{
+            border: 2px solid gray;
+            width: 400px;
+        }
+        tr, th, td {
+            border: 1px dotted gray;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Radio&Check</caption>
+        <tr height="20">
+            <td>
+                <b>최종 학력 선택</b><br>
+                <input type="radio" name="grade" value="고등학교">고등학교&nbsp;<!--radio는 같은 부류로 생성 시 name이 모두 동일해야 함-->
+                <input type="radio" name="grade" value="전문대학">전문대학&nbsp;
+                <input type="radio" name="grade" value="대학교">대학교&nbsp;
+                <input type="radio" name="grade" value="대학원">대학원&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>사용가능 한 언어</b><br>
+                <input type="checkbox" name="lang" value="C언어">C언어&nbsp;
+                <input type="checkbox" name="lang" value="자바">Java&nbsp;
+                <input type="checkbox" name="lang" value="파이썬">Python&nbsp;
+                <input type="checkbox" name="lang" value="고">Go&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>우리반에서 가장 좋은 사람?</b>
+                <select>
+                    <option value = "강동원">강동원</option>
+                    <option value = "김은하">김은하</option>
+                    <option value = "홍길동">홍길동</option>
+                    <option value = "김남길">김남길</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>당신의 키는 몇cm 입니까?</b>
+                <input type="number" name="height" min="150" max="230" step="2" value="150">cm
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>당신의 몸무게는 몇 kg 입니까?</b>
+                <input type="number" name="weight" min="40" max="120" step="2" value="70">kg
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>날짜선택</b>
+                <input type="date">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

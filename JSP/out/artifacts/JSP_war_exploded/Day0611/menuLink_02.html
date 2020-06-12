@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_menuLink</title>
+    <style type="text/css">
+        a{
+            text-decoration: none;
+        }
+        ul li{ /*ul 밑에 li 모두를 의미*/
+            list-style: none;
+        }
+        ul.main{
+            float: left;
+        }
+        ul.submenu{
+            margin-left: 0;
+            margin-top: 15px;
+            font-size: 12px;
+            font-family: 'monospace';
+            padding-left: 0;
+        }
+        li.main>a{ /* >는 바로 아래의 태그를 말한다 */
+            display: block;
+            width: 180px;
+            color: red;
+            font-weight: bold;
+            font-family: 'fantasy';
+        }
+        ul.submenu>li>a {
+            display: block;
+            width: 180px;
+            height: 20px;
+            color: coral;
+        }
+        ul.submenu>li>a:hover { /*마우스를 다가갔을 때 해당 태그의 색을 변경*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="main">
+            <li>
+                <a href="#">1일차</a>
+                <ul class="submenu">
+                    <li><a href="../Day0610/HelloHtml_01.html">예제 #1</a></li>
+                    <li><a href="../Day0610/pTagImg_02.html">예제 #2</a> </li>
+                    <li><a href="../Day0610/pTagImg_03.html">예제 #3</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="main">
+            <li>
+                <a href="#">2일차</a>
+                <ul class="submenu">
+                    <li><a href="../Day0610/cssTest_04.html">예제 #1</a></li>
+                    <li><a href="../Day0610/listOLUL_05.html">예제 #2</a> </li>
+                    <li><a href="../Day0610/olulReview_06.html">예제 #3</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="main">
+            <li>
+                <a href="#">3일차</a>
+                <ul class="submenu">
+                    <li><a href="../Day0610/aTagTest_07.html">예제 #1</a></li>
+                    <li><a href="../Day0610/cssClass_08.html">예제 #2</a> </li>
+                    <li><a href="../Day0610/cssLinkTest_09.html">예제 #3</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
