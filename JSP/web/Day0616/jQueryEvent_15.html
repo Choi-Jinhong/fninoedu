@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15_jQueryEvent</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <style type="text/css">
+        #pannel1, #pannel2, #pannel3, #pannel4, #flip1, #flip2 {
+            padding: 5px;
+            font-size: 15pt;
+            text-align: center;
+            background-color: #ffffcc;
+            border-radius: 50px;
+        }
+        #pannel1, #pannel2, #pannel3, #pannel4{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            //flip1 클릭 이벤트
+            $('#flip1').click(function () {
+                $('#pannel1').slideDown(1000);
+                $('#pannel2').slideDown(1000);
+                $('#pannel3').slideDown(1000);
+                $('#pannel4').slideDown(1000);
+            });
+
+            $('#flip2').click(function () {
+                $('#pannel1').slideUp(5000);
+                $('#pannel2').slideUp(5000);
+                $('#pannel3').slideUp(5000);
+                $('#pannel4').slideUp(5000);
+            })
+        });
+    </script>
+</head>
+<body>
+    <div id="flip1">이미지를 열어요</div>
+    <div align="center">
+        <img id="pannel1" alt="" src="../img/div_img/beauty1.jpg">
+        <img id="pannel2" alt="" src="../img/div_img/beauty2.jpg">
+        <img id="pannel3" alt="" src="../img/div_img/beauty3.jpg">
+        <img id="pannel4" alt="" src="../img/div_img/beauty4.jpg">
+    </div>
+    <div id="flip2">이미지를 닫아요</div>
+</body>
+</html>

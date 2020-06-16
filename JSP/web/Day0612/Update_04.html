@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_radioCheck</title>
+    <style type="text/css">
+        table{
+            border: 2px solid gray;
+            width: 400px;
+        }
+        tr, th, td {
+            border: 1px dotted gray;
+            font-size: 10pt;
+        }
+    </style>
+    <script type="text/javascript">
+        var flag = [false, false, false, false];
+        function goDate(day) {
+            document.getElementById("out2").innerHTML = day;
+        }
+        
+        function goColor(color) {
+            document.getElementById("col").innerHTML = color;
+        }
+        function goWeight(weight) {
+            document.getElementById("out3").innerHTML = weight;
+        }
+        function goHeight(height) {
+            document.getElementById("out4").innerHTML = height;
+        }
+        function goleng(leng, n) {
+            if(flag[n] == false){
+                flag[n] = true;
+                document.getElementById("out5").innerHTML += leng;
+            }
+            else{
+                flag[n] = false;
+                document.getElementById("out5").innerHTML =document.getElementById("out5").innerHTML.replace(leng, '');
+            }
+        }
+    </script>
+</head>
+<body>
+<table>
+    <caption>Radio&Check</caption>
+    <tr height="20">
+        <td>
+            <b>최종 학력 선택</b><br>
+            <input type="radio" name="grade" value="고등학교">고등학교&nbsp;<!--radio는 같은 부류로 생성 시 name이 모두 동일해야 함-->
+            <input type="radio" name="grade" value="전문대학">전문대학&nbsp;
+            <input type="radio" name="grade" value="대학교">대학교&nbsp;
+            <input type="radio" name="grade" value="대학원">대학원&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>사용가능 한 언어</b><br>
+            <input type="checkbox" name="lang" value="C언어" onclick="goleng(this.value, 0)">C언어&nbsp;
+            <input type="checkbox" name="lang" value="자바" onclick="goleng(this.value, 1)">Java&nbsp;
+            <input type="checkbox" name="lang" value="파이썬" onclick="goleng(this.value, 2)">Python&nbsp;
+            <input type="checkbox" name="lang" value="고" onclick="goleng(this.value, 3)">Go
+            <span id="out5"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>색상선택</b>
+            <input type="color" onchange="goColor(this.value)">
+            <span id="col"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>당신의 키는 몇cm 입니까?</b>
+            <input type="number" name="height" min="150" max="230" step="2" value="150" onchange="goHeight">
+            <span id="out4"></span>kg
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>당신의 몸무게는 몇 kg 입니까?</b>
+            <input type="number" name="weight" min="40" max="120" step="2" value="70" onchange="goWeight(this.value)">
+            <span id="out3"></span>kg
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>날짜선택</b>
+            <input type="date" onchange="goDate(this.value)">
+            <span id="out2"></span>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

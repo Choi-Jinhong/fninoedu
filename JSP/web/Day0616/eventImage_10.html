@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10_eventImage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btnA').click(function () {
+                alert("이미지1");
+                $('#imgA').attr('src', '../img/image/1.png').attr('title', '첫번째');
+            });
+
+            $('#btnB').click(function () {
+                alert("이미지2");
+                $('#imgA').attr('src', '../img/image/2.png').attr('title', '두번째');
+            });
+
+            $('#btnC').click(function () {
+                alert("이미지3");
+                $('#imgA').attr('src', '../img/image/3.png').attr('title', '세번째');
+            });
+
+            $('#btnD').click(function () {
+                var w=$('#imgA').attr('width');
+                var h=$('#imgA').attr('height');
+
+                w=parseInt(w) + 10;
+                h=parseInt(h) + 10;
+
+                $('#imgA').attr('width', w).attr('height', h);
+            });
+            $('#btnE').click(function () {
+
+                var w=$('#imgA').attr('width');
+                var h=$('#imgA').attr('height');
+
+                w=parseInt(w) - 10;
+                h=parseInt(h) - 10;
+
+                $('#imgA').attr('width', w).attr('height', h);
+            });
+        })
+    </script>
+</head>
+<body>
+    <img src="" id="imgA" border="1" width="200" height="250"/>
+    <br><br>
+
+    <button id="btnA" class="btn btn-success">이미지 1</button>
+    <button id="btnB" class="btn btn-success">이미지 2</button>
+    <button id="btnC" class="btn btn-success">이미지 3</button>
+    <button id="btnD" class="btn btn-success">점점크게</button>
+    <button id="btnE" class="btn btn-success">점점작게</button>
+</body>
+</html>

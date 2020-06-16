@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_jQueryTest</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        /*
+        $(document).ready(function () {
+
+        })
+         */
+        $(function () {
+            $('h2').css('color', 'red');
+            $('#good').css('color', 'blue');
+            $('.korea').addClass("kor");
+            $('.kor').css('color', 'cyan');
+        });
+
+    </script>
+</head>
+<body>
+    <h2>jQuery 이해하기</h2>
+    <b id="good">구조와 코드를 분리하기 적합한 특징을 가졌다.</b>
+    <div class="korea">대한민국</div>
+</body>
+</html>

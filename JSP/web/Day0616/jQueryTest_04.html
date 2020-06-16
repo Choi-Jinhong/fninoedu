@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04_jQueryTest</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+    <h2>문단안에 <a>링크</a> 태그가 있다.<br>
+    두번째 태그에는 <span><a>링크</a></span>는 손자이다.</h2>
+
+    <script type="text/javascript">
+        $('h2 > a').css('border', '1px solid red'); // 부모의 바로 아래 자식에게 적용
+        $('h2 a').css('background-color', 'yellow'); // 부모의 아래 있는 모든 자식에게 적용
+    </script>
+
+</body>
+</html>

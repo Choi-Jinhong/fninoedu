@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function change(n) {
+            if(n == 1){
+                a_img.src="img/toy03.png";
+                document.getElementById('r_img').setAttribute('src', "img/toy04.png");
+            }
+            else if(n == 2){
+                a_img.src="img/toy05.png";
+                document.getElementById('r_img').setAttribute('src', "img/toy06.png");
+            }
+            else{
+                a_img.src="img/toy01.png";
+                document.getElementById('r_img').setAttribute('src', "img/toy02.png");
+            }
+        }
+    </script>
+    <style type="text/css">
+        img{
+            width: 100px;
+            border: 10px solid cyan;
+        }
+    </style>
+</head>
+<body>
+<h4>절대주소를 이용한 이미지</h4>
+<hr>
+<img alt="" src="img/toy01.png" id="a_img">
+<h4>상대주소를 이용한 이미지</h4>
+<hr>
+<img alt="" src="img/toy02.png" id="r_img">
+<br>
+<input type="button" value="변경1" class="mybtn" onclick="change(1)">
+<input type="button" value="변경2" class="mybtn" onclick="change(2)">
+<input type="button" value="원래대로" class="mybtn" onclick="change(3)">
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07_jQuerySelect</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <p>일반적인 문단이다.</p>
+    <p>문단안에 <span>span태그</span>가 있습니다.</p>
+    <p>아이유 이쁘죠?</p>
+    <!-- has(t): t태그를 가진 객체만 선택
+         contains(s): s문자열을 가진 객체만 선택 -->
+    <script type="text/javascript">
+        $('p:has(span)').css('background-color', 'yellow');
+        $('p:contains(아이유)').css('font-weight', 'bold', 'border', '3px solid blue'); // 두개의 속성을 넣으려면 따로 입력
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11_jQueryEach</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <h3>안녕하세요_1</h3>
+    <h3>안녕하세요_2</h3>
+    <h3>안녕하세요_3</h3>
+    <h3>안녕하세요_4</h3>
+    <h3>안녕하세요_5</h3>
+</body>
+<script type="text/javascript">
+    var arrColor=['yellow', 'green', 'blue', 'red', 'coral'];
+    $('h3').each(function (index, item) {
+        $(item).css('background-color', arrColor[index]);
+    });
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17_jQueryEvent</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btn1').click(function () {
+                $('h2').toggle('slow');
+                $('img').toggle('slow');
+            });
+            $('#btn2').click(function () {
+                $('h2').slideToggle('fast');
+                $('img').slideToggle('fast');
+            });
+            $('#btn3').click(function () {
+                $('h2').fadeToggle('fast');
+                $('img').fadeToggle('fast');
+            });
+        });
+    </script>
+</head>
+<body>
+<!--toggle은 hide+show
+    Slide_toggle은 slideUp, slideDown
+    fade_toggle은 fadeOut, fadeIn-->
+    <button id="btn1" class="btn btn-info">toggle</button>
+    <button id="btn2" class="btn btn-info">Slide_toggle</button>
+    <button id="btn3" class="btn btn-info">Fade_toggle</button>
+    <hr>
+    <img src="../img/image/seol.png">
+    <img src="../img/image/taeri.png">
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Insert title here</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <script type="text/javascript">
+        $(function() {
+            //버튼1이벤트
+            $('#btna').click(function(){
+                alert("이미지1");
+                $('#imgA').attr('src','../img/image/1.png');
+            });
+            //버튼2이벤트
+            $('#btnb').click(function(){
+
+                alert("이미지2");
+                $('#imgA').attr('src','../img/image/2.png');
+            });
+            //버튼3이벤트
+            $('#btnc').click(function(){
+
+                alert("이미지3");
+                $('#imgA').attr('src','../img/image/3.png');
+            });
+            //버튼4이벤트
+            $('#btnd').click(function(){
+
+                //이미지의 너비, 높이 얻기
+                var w=$('#imgA').attr('width');
+                var h=$('#imgA').attr('height');
+
+                //형변환
+                w = parseInt(w)+10;
+                h = parseInt(h)+10;
+
+                //얻은 w.h를 이미지에 적용
+                $('#imgA').attr('width', w).attr('height', h);
+            });
+
+            //버튼5이벤트
+
+            $('#btne').click(function(){
+
+                //이미지의 너비, 높이 얻기
+                var w=$('#imgA').attr('width');
+                var h=$('#imgA').attr('height');
+
+                //형변환
+                w=parseInt(w)-10;
+                h=parseInt(h)-10;
+
+                //얻은 w.h를 이미지에 적용
+                $('#imgA').attr('width',w).attr('height',h);
+            });
+
+        });
+    </script>
+</head>
+<body>
+<img src="" id="imgA" border="1" width="200" height="250">
+<br><br>
+
+<button id="btna" class="btn btn-success">이미지1</button>
+<button id="btnb" class="btn btn-success">이미지2</button>
+<button id="btnc" class="btn btn-success">이미지3</button>
+<button id="btnd" class="btn btn-success">점점크게</button>
+<button id="btne" class="btn btn-success">점점작게</button>
+
+</body>
+</html>

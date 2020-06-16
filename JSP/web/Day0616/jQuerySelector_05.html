@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_jQuerySelector</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <!-- 대부분 ul로 맞춘다고 하신다 -->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+    </ul>
+
+    <script type="text/javascript">
+        $('li:first, li:last').css('background-color', 'yellow'); // li태그 중 첫번째 태그와 마지막 태그에만 적용
+        $('li:eq(3)').css('background-color', 'cyan'); // li중 4번째 태그에 설정
+        $('li:lt(4)').css('font-weight', 'bold'); // li의 1 ~ 4번째까지 적용
+    </script>
+</body>
+</html>

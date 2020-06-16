@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06_getElement</title>
+    <style type="text/css">
+        .test{
+            width: 100px;
+            height: 110px;
+        }
+        .result{
+            width: 300px;
+            height: 300px;
+        }
+        div#img_div{
+            position: absolute;
+            left: 500px;
+            top: 100px;
+        }
+        div#result_div {
+            position: absolute;
+            left: 400px;
+
+        }
+    </style>
+    <script type="text/javascript">
+        function f() {
+            window.onload=function(){
+                var img = String[document.getElementById("img1"),
+                    document.getElementById("img2"),
+                    document.getElementById("img3"),
+                    document.getElementById("img4")
+                    ];
+                img1 = document.getElementById("img1");
+                out = document.getElementById("out");
+            }
+            img1.onclick=function () {
+                out.setAttribute("src", img1.getAttribute("src"));
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="img_div">
+        <img alt="" src="img/C1.png" id="img1" class="test">
+        <img alt="" src="img/C2.png" id="img2" class="test">
+        <img alt="" src="img/C3.png" id="img3" class="test">
+        <img alt="" src="img/C4.png" id="img4" class="test">
+    </div>
+    <div id="result_div">
+        <img alt="" src="" id="out" class="result">
+    </div>
+</body>
+</html>

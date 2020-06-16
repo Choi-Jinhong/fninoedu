@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_hellojQuery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){ //window.onload와 같은 역할을 하게 됨, document가 실행되기 전에 실행된다.
+            $("*").css("border", "1px solid #ffcccc");
+            $('span').css("border", "3px solid blue");
+            // jQuery를 의미하는 것이 $이다.
+            //jQuery('#content').css('background-color', 'cyan');
+            $('#content').css('background-color', 'cyan');
+            $('.my').css('border', '5px solid red');
+        });
+    </script>
+
+</head>
+<body>
+    <h2>jQuery에서 셀렉터를 사용해 처리</h2>
+    <div>
+        <div id="content">id값이 Content인 div tag</div>
+    </div>
+    <b>b1</b>
+    <span>span 1</span>
+    <span class="my">span2</span>
+</body>
+</html>

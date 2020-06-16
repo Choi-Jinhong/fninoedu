@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_jQureySelect</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        document.write("hidden의 문단 갯수: " + $('p:hidden').length + "<br>");
+        document.write("visibility 문단 갯수: " + $('p:visible').length + "<br>");
+    </script>
+</head>
+<body>
+    <p style="visibility: hidden">숨겨진 문단</p>
+    <p style="display: none">자리를 차지하지 못한 문단</p>
+    <p style="opacity: 0">투명한 문단</p>
+    <hr>
+</body>
+</html>

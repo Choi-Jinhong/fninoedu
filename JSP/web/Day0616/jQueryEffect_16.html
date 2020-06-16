@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16_jQueryEffect</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btn1').click(function () {
+                $('h1').hide('slow');
+                $('img:lt(2)').hide('slow');
+            });
+            $('#btn2').click(function () {
+                $('h1').show('slow');
+                $('img:lt(2)').show('slow');
+            });
+            $('#btn3').click(function () {
+                $('h1').slideUp('slow');
+                $('img:lt(2)').slideUp('slow');
+            });
+            $('#btn4').click(function () {
+                $('h1').slideDown('slow');
+                $('img:lt(2)').slideDown('slow');
+            });
+            $('#btn5').click(function () {
+                $('h1').fadeIn('fast');
+                $('img:lt(2)').fadeIn('fast');
+            });
+            $('#btn6').click(function () {
+                $('h1').fadeOut('fast');
+                $('img:lt(2)').fadeOut('fast');
+            });
+            //btn7: fadeTo
+            var fade = true;
+            $('#btn7').click(function () {
+               //투명도 설정
+               if(fade){
+                   $('h1').fadeTo('slow', 0.1);
+                   $('img:lt(2)').fadeTo('slow', 0.1);
+                   fade=false;
+               }
+               else{
+                   $('h1').fadeTo('slow', 1);
+                   $('img:lt(2)').fadeTo('slow', 1);
+                   fade=true;
+               }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Effect 함수들</h2>
+    <button id="btn1" class="btn btn-info">Hide</button>
+    <button id="btn2" class="btn btn-info">Show</button>
+    <button id="btn3" class="btn btn-info">SideUp</button>
+    <button id="btn4" class="btn btn-info">SideDown</button>
+    <button id="btn5" class="btn btn-info">FadeIn</button>
+    <button id="btn6" class="btn btn-info">FadeOut</button>
+    <button id="btn7" class="btn btn-info">FadeTo</button>
+    <hr>
+    <h1>애니메이션 대상</h1>
+    <img alt="" src="../img/imgs/b01.png">
+    <img alt="" src="../img/imgs/b02.png">
+</body>
+</html>

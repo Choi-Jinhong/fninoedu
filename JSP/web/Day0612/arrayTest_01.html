@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_arrayTest</title>
+    <script type="text/javascript">
+        var food=["딸기", "오렌지", "사과", "키위"];
+
+        document.write("배열 테스트<br>");
+
+        for(var i = 0; i < food.length; i++){
+            document.write(food[i] + "<br>");
+        }
+        document.write("-------------------------------------------<br>");
+    </script>
+</head>
+<body>
+    <h2>10개의 난수 출력</h2>
+    <script type="text/javascript">
+        var rnd;
+
+        for(var i = 1; i<= 10; i++){
+            rnd = parseInt(Math.random()*10) + 1;
+            document.write("<h4>" + rnd + "</h4>");
+        }
+
+        document.write("<h2>자바스크립트 배열 선언법</h2>");
+        var arr = new Array();
+        arr[0] = '장미';
+        arr[1] = '튤립';
+        arr[2] = '프레지아';
+        arr[3] = '물망초';
+
+        for(var i = 0; i < arr.length; i++){
+            document.write(arr[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

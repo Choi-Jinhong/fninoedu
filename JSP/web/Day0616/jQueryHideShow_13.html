@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13_jQueryHideShow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#hide').click(function () {
+                $('img').hide();
+            });
+
+            $('#show').click(function () {
+                $('img').show();
+            })
+        });
+
+    </script>
+</head>
+<body>
+    <div>
+        <img alt="#" src="../img/div_img/actor1.jpg">
+        <br><br>
+
+        <button id="hide" class="btn btn-default">Hide</button>
+        <button id="show" class="btn btn-default">Show</button>
+    </div>
+</body>
+</html>
