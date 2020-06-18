@@ -18,10 +18,8 @@ public class infoDAO {
 
     public Connection getConnection(){
         Connection conn = null;
-        System.out.println("connection 체크하기");
         try {
             conn = DriverManager.getConnection(url, "gnong", "1234");
-            System.out.println("check2");
         } catch (SQLException e) {
             System.out.println("connection fail");
             e.printStackTrace();
@@ -40,6 +38,12 @@ public class infoDAO {
             pstmt.setString(1, dto.getName());
             pstmt.setString(2, dto.getAddr());
             pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            pstmt.close();
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -65,6 +69,8 @@ public class infoDAO {
                 dto.setName(rs.getString("name"));
                 dto.setAddr(rs.getString("addr"));
                 dto.setSdate(rs.getTimestamp("sdate"));
+
+                list.add(dto);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -78,6 +84,87 @@ public class infoDAO {
             }
         }
         return list;
+    }
+
+    public infoDTO getData(String num){
+        infoDTO dto = new infoDTO();
+
+        Connection conn = getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        String sql="select * from info where num = ?";
+
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, num);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                dto.setNum(rs.getString("num"));
+                dto.setName(rs.getString("name"));
+                dto.setAddr(rs.getString("addr"));
+                dto.setSdate(rs.getTimestamp("sdate"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                rs.close();
+                pstmt.close();
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return dto;
+    }
+
+    public void infoUpdate(infoDTO dto){
+        Connection conn = getConnection();
+        PreparedStatement pstmt = null;
+
+        String sql="UPDATE info SET name = ?, addr = ? WHERE num = ?";
+
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, dto.getName());
+            pstmt.setString(2, dto.getAddr());
+            pstmt.setString(3, dto.getNum());
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                pstmt.close();
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void infoDelete(infoDTO dto){
+        Connection conn = getConnection();
+        PreparedStatement pstmt = null;
+
+        String sql = "DELETE FROM info WHERE num = ?";
+
+        try {
+            pstmt= conn.prepareStatement(sql);
+            pstmt.setString(1, dto.getNum());
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                pstmt.close();
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
     public static void main(String[] args) {
         infoDAO dao = new infoDAO();

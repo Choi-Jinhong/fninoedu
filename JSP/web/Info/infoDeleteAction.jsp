@@ -2,8 +2,8 @@
 <%@ page import="info.model.infoDAO" %><%--
   Created by IntelliJ IDEA.
   User: 최진홍
-  Date: 2020-06-17
-  Time: 오후 3:46
+  Date: 2020-06-18
+  Time: 오후 1:25
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -13,19 +13,15 @@
 </head>
 <body>
     <%
-        request.setCharacterEncoding("utf-8");
-        String name = request.getParameter("name");
-        String addr = request.getParameter("addr");
+        String num = request.getParameter("num");
 
         infoDTO dto = new infoDTO();
-        dto.setName(name);
-        dto.setAddr(addr);
+        dto.setNum(num);
 
         infoDAO dao = new infoDAO();
-        dao.infoInsert(dto);
+        dao.infoDelete(dto);
 
         response.sendRedirect("infoList.jsp");
     %>
-
 </body>
 </html>

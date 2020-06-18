@@ -35,7 +35,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/ojdbc14.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

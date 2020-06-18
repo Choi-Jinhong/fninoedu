@@ -38,7 +38,7 @@
                     <td><%=dto.getName()%></td>
                     <td><%=dto.getAddr()%></td>
                     <td><%=dto.getSdate()%></td>
-                    <td><a>수정</a>/<a>삭제</a></td>
+                    <td><a href="infoUpdateForm.jsp?num=<%=dto.getNum()%>">수정</a>/<a href="infoDeleteAction.jsp?num=<%=dto.getNum()%>">삭제</a></td>
                 </tr>
                 <%
             }%>
