@@ -1,6 +1,7 @@
 <%@ page import="profile.model.ProfileDAO" %>
 <%@ page import="profile.model.ProfileDTO" %>
-<%@ page import="java.sql.Timestamp" %><%--
+<%@ page import="java.sql.Timestamp" %>
+<%--
   Created by IntelliJ IDEA.
   User: 최진홍
   Date: 2020-06-18
@@ -17,14 +18,20 @@
         request.setCharacterEncoding("utf-8");
         String blood = request.getParameter("blood");
         String name = request.getParameter("name");
-        String hp = request.getParameter("hp1") + request.getParameter("hp2") + request.getParameter("hp3");
+        String hp = request.getParameter("hp1") + " " + request.getParameter("hp2") + " " + request.getParameter("hp3");
+        String check= request.getParameter("check");
         ProfileDTO dto = new ProfileDTO();
         dto.setBlood(blood);
         dto.setName(name);
         dto.setHp(hp);
 
         ProfileDAO dao = new ProfileDAO();
-        dao.profileInsert(dto);
+        if(check.equalsIgnoreCase("insert")){
+            dao.profileInsert(dto);
+        }
+        else if(check.equalsIgnoreCase("update")){
+            dao.profileUpdate(dto);
+        }
 
         response.sendRedirect("profileList.jsp");
     %>

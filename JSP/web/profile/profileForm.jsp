@@ -11,7 +11,7 @@
     <title>Title</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <script type="text/javascript">
+    <script type="text/javascript" name="frm">
         function goFocus(hp) {
             if(hp.value.length == 4){
                 frm.hp3.focus();
@@ -20,7 +20,7 @@
     </script>
 </head>
 <body>
-    <form action="profileAction.jsp" method="post">
+    <form action="profileAction.jsp?check='insert'" method="post">
         <table class = "table table-bordered" style="width: 350px">
             <caption style="border: 3px solid black; text-align: center; font-weight: bold">신상정보</caption>
             <tr>

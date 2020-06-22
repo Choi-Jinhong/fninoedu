@@ -7,7 +7,7 @@ public class ProfileDTO {
     String name = "";
     String blood ="";
     String hp ="";
-    Timestamp birth;
+    String birth;
 
     public void setName(String name) {
         this.name = name;
@@ -17,7 +17,7 @@ public class ProfileDTO {
         this.num = num;
     }
 
-    public void setBirth(Timestamp birth) {
+    public void setBirth(String birth) {
         this.birth = birth;
     }
 
@@ -37,7 +37,7 @@ public class ProfileDTO {
         return num;
     }
 
-    public Timestamp getBirth() {
+    public String getBirth() {
         return birth;
     }
 
