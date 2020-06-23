@@ -13,7 +13,7 @@
     <%
         String path = request.getContextPath();
     %>
-<body margin: 0 auto;>
+<body>
     <img alt="" src="<%=path%>/shop/actor1.jpg" width="400px" height = "400px" border="1">
     <img alt="" src="<%=path%>/shop/beauty1.jpg" width="400px" height = "400px"   border="1">
     <img alt="" src="<%=path%>/shop/beauty2.jpg" width="400px" height = "400px"  border="1">

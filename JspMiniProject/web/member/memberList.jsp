@@ -14,6 +14,9 @@
     <title>Title</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <%
+        String path = request.getContextPath();
+    %>
 </head>
 <body>
     <%
@@ -38,7 +41,7 @@
                 <td><%=dto.getPwd()%></td>
                 <td><%=dto.getName()%></td>
                 <td><%=sdf.format(dto.getSday())%></td>
-                <td><a href="#">수정</a>/<a href="#">삭제</a></td>
+                <td><a href="<%=path%>/index.jsp?body=member/memberUpdatePwdForm.jsp?num=<%=dto.getNum()%>">수정</a>/<a href="<%=path%>/index.jsp?body=member/memberDelPwd.jsp?num=<%=dto.getNum()%>">삭제</a></td>
             </tr>
             <%
                 }
