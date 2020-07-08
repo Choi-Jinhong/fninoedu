@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="db" class="spring.day0625.ex4.MyOracle">
+	<!-- 2개의 생성자 주입 -->
+	<constructor-arg>
+		<value>oracle.jdbc.driver.OracleDriver</value>
+	</constructor-arg>
+	
+	
+	<constructor-arg>
+		<value>jdbc:oracle:thin:@localhost:1521:XE</value>
+	</constructor-arg>
+	
+	<!-- 2개의 setter 주입 -->
+	<property name="user" value="gutba"/>
+	<property name="password" value="sokchock"/>
+	
+	</bean>
+
+</beans>

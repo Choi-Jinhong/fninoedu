@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+	<!-- personData설정 -->
+	<bean name="pdata" class="spring.day0625.ex3.PersonData">
+		<!-- 생성자 주입 -->
+		<constructor-arg value="강호동"></constructor-arg>
+		<!-- 급여, 입사일은 setter 주입 -->
+		<property name="pay" value="2300000"/>
+		<property name="ipsaday" value="2011-12-12"/>
+	</bean>
+	
+	<!-- personData2설정 -->
+	<bean name="pdata2" class="spring.day0625.ex3.PersonData">
+		<!-- 3개의 멤버 모두 setter주입 -->
+			<property name="sawonname" value="이주현"/>
+			<property name="pay" value="1500000"/>
+			<property name="ipsaday" value="2012-12-11"/>
+	</bean>
+	
+	
+	<!-- person설정 -->
+	<bean name="per" class="spring.day0625.ex3.Person">
+	
+	<!-- ref태그는 bean의 이름이나 id로 찾는다 -->
+		<constructor-arg ref="pdata"/>
+	</bean>
+	
+	<!-- person2설정 -->
+	<bean name="per2" class="spring.day0625.ex3.Person">
+		<constructor-arg ref="pdata2"/>
+	
+	</bean>
+
+</beans>

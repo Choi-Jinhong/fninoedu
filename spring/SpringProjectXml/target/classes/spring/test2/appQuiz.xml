@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<!-- score1 강호동은 생성자 주입 -->
+	<bean name="score1" class="spring.day0625.quiz.Score">
+		<constructor-arg value="90"/>
+		<constructor-arg value="88"/>
+		<constructor-arg value="100"/>
+	</bean>
+
+	<!-- score2 유재석은 setter 주입 -->
+	<bean name="score2" class="spring.day0625.quiz.Score">
+		<property name="java" value="78"/>
+		<property name="jsp" value="88"/>
+		<property name="spring" value="55"/>
+		
+	</bean>
+	
+	<!-- info1 강호동은 생성자 주입 -->
+	<bean name="info1" class="spring.day0625.quiz.Info">
+		<constructor-arg value="강호동"/>
+		<constructor-arg value="32"/>
+			
+	</bean>
+	
+	<!-- info2 유재석은 setter 주입 -->
+	<bean name="info2" class="spring.day0625.quiz.Info">
+		<property name="name" value="유재석"/>
+		<property name="age" value="22"/>
+				
+	</bean>
+	
+	<!-- MyData1 -->
+	<bean name="my1" class="spring.day0625.quiz.MyData">
+		<constructor-arg ref="score1"/>
+		<constructor-arg ref="info1"/>
+	</bean>
+	
+	
+	<!-- MyData2 -->
+	<bean name="my2" class="spring.day0625.quiz.MyData">
+		<constructor-arg ref="score2"/>
+		<constructor-arg ref="info2"/>
+	
+	
+	</bean>
+	
+
+
+</beans>
